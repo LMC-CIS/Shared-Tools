@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' https: data:; connect-src 'self' https:; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="description" content="How to share a tool with the Academic Tools in Development catalog.">
+  <meta name="color-scheme" content="light dark">
+  <title>Contribute · Academic Tools in Development</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <script src="assets/js/theme-init.js"></script>
+  <script type="module" src="assets/js/common.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="wrap">
+      <div class="brand">
+        <a class="brand-title" href="index.html">Academic Tools in Development</a>
+        <p class="brand-note">A community effort led by Lake Michigan College CIS faculty. Not an official college product.</p>
+      </div>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Tools</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contribute.html">Contribute</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="license.html">License</a></li>
+          <li><button type="button" class="theme-toggle" aria-pressed="false">Dark mode</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="main" tabindex="-1">
+    <div class="wrap">
+      <div class="prose">
+        <h1>Contribute</h1>
+        <p class="lede">Built something useful for teaching, advising, or running a course? Share it. You can add it yourself on GitHub, or send it to a maintainer who will add it for you.</p>
+        <p class="notice" data-placeholder-note hidden><strong>Maintainers:</strong> the contact email and submission form below are still placeholders. Update them in <code>site.config.json</code>.</p>
+
+        <h2>Before you share: checklist</h2>
+        <p>Every submission needs all of these. Maintainers check them before merging.</p>
+        <ul>
+          <li>FERPA and student privacy have been considered.</li>
+          <li>No credentials, passwords, API keys, or access tokens are included.</li>
+          <li>No real student data appears in examples or screenshots (use made-up names like “Student A”).</li>
+          <li>Data handling is described in one plain sentence.</li>
+          <li>The author is credited.</li>
+          <li>It has been tested in the environment it says it runs on.</li>
+        </ul>
+
+        <h2>Option 1: Add it on GitHub (no command line needed)</h2>
+        <p>You need a free GitHub account. Everything happens in your web browser.</p>
+        <ol>
+          <li>Open the <a href="https://github.com/LMC-CIS/Shared-Tools/tree/main/catalog">catalog folder</a> and choose <strong>Add file → Create new file</strong>. (If you don’t have write access, GitHub will offer to make a copy, called a fork, for you. Accept it.)</li>
+          <li>In the name box, type <code>your-tool-name/tool.json</code>. Typing the <code>/</code> creates the folder. Use lowercase letters and hyphens.</li>
+          <li>Paste the contents of the <a href="https://github.com/LMC-CIS/Shared-Tools/blob/main/templates/tool.json">tool.json template</a> and fill in each field. The field meanings are in the <a href="https://github.com/LMC-CIS/Shared-Tools#tooljson-fields">README</a>.</li>
+          <li>Optional: add a <code>README.md</code> in the same folder with a longer description, written in Markdown.</li>
+          <li>If the tool’s files live in this repository, upload them to the same folder (<strong>Add file → Upload files</strong>) and list their names under <code>"files"</code>. If the code lives in its own repository, put that link in <code>"source"</code> instead.</li>
+          <li>Choose <strong>Commit changes → Create a new branch → Propose changes</strong>, then <strong>Create pull request</strong>. The pull request shows the checklist; tick each item.</li>
+          <li>An automatic check reads your <code>tool.json</code> and explains anything that needs fixing in plain language. A maintainer then reviews and merges it.</li>
+        </ol>
+
+        <h2>Option 2: Send it to a maintainer</h2>
+        <p>Not on GitHub? Send your tool to a maintainer and they will add it for you.</p>
+        <div class="btn-row">
+          <a class="btn" href="mailto:TODO-maintainer-contact@example.org" data-config-href="contactEmail">Email a maintainer</a>
+          <a class="btn secondary" href="https://example.org/TODO-submission-form" data-config-href="submissionFormUrl">Use the submission form</a>
+        </div>
+        <p>Email: <code data-config="contactEmail">TODO-maintainer-contact@example.org</code> · Form: <code data-config="submissionFormUrl">https://example.org/TODO-submission-form</code></p>
+        <p>Please include:</p>
+        <ul>
+          <li>The tool’s name and a one- or two-sentence summary.</li>
+          <li>What type it is (bookmarklet, AI skill, guide, workflow, app, extension, or other).</li>
+          <li>Who it is for (students, faculty, staff) and what it runs on (for example Canvas in Chrome).</li>
+          <li>The files, or a link to where the code lives.</li>
+          <li>One sentence on what data it reads, stores, or sends.</li>
+          <li>How you want to be credited, and a contact address.</li>
+          <li>Confirmation that you have gone through the checklist above.</li>
+        </ul>
+        <p>Do not email passwords, tokens, or any real student data.</p>
+
+        <h2>Changing or retiring your tool</h2>
+        <p>Edit the tool’s <code>tool.json</code> on GitHub (the pencil icon) and change <code>"status"</code> to <code>"unmaintained"</code> or <code>"retired"</code>, or ask a maintainer to do it.</p>
+      </div>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Resources here are open-source working projects shared by faculty and staff, with no guarantee that they work or will be maintained. Review before use. <a href="disclaimer.html">Read the disclaimer</a>.</p>
+      <p>Code under MIT, documentation under CC BY 4.0 (<a href="license.html">details</a>). This site uses no tracking or analytics. <a href="https://github.com/LMC-CIS/Shared-Tools">Source on GitHub</a>.</p>
+    </div>
+  </footer>
+</body>
+</html>

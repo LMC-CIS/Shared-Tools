@@ -1,0 +1,19 @@
+{
+  "$schema": "../../schema/tool.schema.json",
+  "name": "Sample Skill: Rubric Feedback Helper",
+  "summary": "TODO sample entry: an AI skill file showing how skill-type resources look in the catalog, here for drafting rubric-aligned feedback.",
+  "type": "skill",
+  "audience": ["faculty"],
+  "runsOn": ["Claude", "Other AI assistants"],
+  "author": "TODO: author name",
+  "contact": "todo@example.org",
+  "version": "0.1.0",
+  "status": "experimental",
+  "lastTested": null,
+  "files": ["SKILL.md"],
+  "dataHandling": "The skill is a set of instructions only; anything you paste into an AI assistant is governed by that assistant's terms, so never paste identifiable student work or data unless your institution has approved it.",
+  "license": "MIT",
+  "ferpaConfirmed": true,
+  "tags": ["feedback", "grading", "AI", "sample"],
+  "todo": true
+}

@@ -1,0 +1,21 @@
+{
+  "name": "academic-tools-in-development",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static community catalog of academic tools shared by college faculty and staff.",
+  "license": "MIT",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "validate": "node scripts/validate.mjs",
+    "build": "node scripts/build-index.mjs",
+    "build:check-links": "node scripts/build-index.mjs --check-links",
+    "check-links": "node scripts/check-links.mjs",
+    "serve": "node scripts/serve.mjs",
+    "start": "npm run build && npm run serve"
+  },
+  "devDependencies": {
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1"
+  }
+}

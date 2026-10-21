@@ -1,0 +1,19 @@
+{
+  "$schema": "../../schema/tool.schema.json",
+  "name": "Sample Guide: Writing a Good Tool Description",
+  "summary": "TODO sample entry: a short Markdown guide showing how guide-type resources look in the catalog, with tips for describing a tool clearly.",
+  "type": "guide",
+  "audience": ["faculty", "staff"],
+  "runsOn": ["Any web browser"],
+  "author": "TODO: author name",
+  "contact": "todo@example.org",
+  "version": "0.1.0",
+  "status": "active",
+  "lastTested": null,
+  "files": ["guide.md"],
+  "dataHandling": "This is a document only; it does not read, store, or send any data.",
+  "license": "CC-BY-4.0",
+  "ferpaConfirmed": true,
+  "tags": ["documentation", "sample"],
+  "todo": true
+}
