@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' https: data:; connect-src 'self' https:; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="description" content="A community catalog of tools and resources for academic use, shared by college faculty and staff.">
+  <meta name="color-scheme" content="light dark">
+  <title>Academic Tools in Development</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <script src="assets/js/theme-init.js"></script>
+  <script type="module" src="assets/js/common.js"></script>
+  <script type="module" src="assets/js/catalog.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="wrap">
+      <div class="brand">
+        <a class="brand-title" href="index.html">Academic Tools in Development</a>
+        <p class="brand-note">A community effort led by Lake Michigan College CIS faculty. Not an official college product.</p>
+      </div>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Tools</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contribute.html">Contribute</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="license.html">License</a></li>
+          <li><button type="button" class="theme-toggle" aria-pressed="false">Dark mode</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="main" tabindex="-1">
+    <div class="wrap">
+      <h1>Academic Tools in Development</h1>
+      <p class="lede">Bookmarklets, AI skills, guides, workflows, and small apps that college faculty and staff have built and are sharing for academic use. These are working projects: review each one before you use it.</p>
+      <div class="catalog">
+        <details class="filters" open>
+          <summary>Filters</summary>
+          <form id="filters-form" aria-label="Filter tools">
+            <fieldset>
+              <legend>For</legend>
+              <label><input type="checkbox" name="audience" value="students"> Students</label>
+              <label><input type="checkbox" name="audience" value="faculty"> Faculty</label>
+              <label><input type="checkbox" name="audience" value="staff"> Staff</label>
+            </fieldset>
+            <fieldset>
+              <legend>Type</legend>
+              <label><input type="checkbox" name="type" value="bookmarklet"> Bookmarklet</label>
+              <label><input type="checkbox" name="type" value="skill"> AI skill</label>
+              <label><input type="checkbox" name="type" value="guide"> Guide</label>
+              <label><input type="checkbox" name="type" value="workflow"> Workflow</label>
+              <label><input type="checkbox" name="type" value="app"> App</label>
+              <label><input type="checkbox" name="type" value="extension"> Browser extension</label>
+              <label><input type="checkbox" name="type" value="other"> Other</label>
+            </fieldset>
+            <fieldset>
+              <label class="block" for="f-system">Runs on</label>
+              <select id="f-system" name="system">
+                <option value="">Any system</option>
+              </select>
+            </fieldset>
+            <fieldset>
+              <legend>Status</legend>
+              <label><input type="checkbox" name="status" value="active" checked> Active</label>
+              <label><input type="checkbox" name="status" value="experimental" checked> Experimental</label>
+              <label><input type="checkbox" name="status" value="unmaintained" checked> Unmaintained</label>
+              <label><input type="checkbox" name="status" value="retired"> Retired</label>
+            </fieldset>
+            <div class="filter-actions">
+              <button type="button" id="reset-filters" class="btn secondary">Reset filters</button>
+            </div>
+          </form>
+        </details>
+        <section aria-labelledby="results-heading">
+          <h2 id="results-heading" class="visually-hidden">Tools</h2>
+          <div class="search-row">
+            <div class="field">
+              <label class="block" for="search">Search</label>
+              <input type="search" id="search" name="q" placeholder="Name, system, keyword…" autocomplete="off">
+            </div>
+          </div>
+          <p id="result-count" class="result-count" role="status" aria-live="polite">Loading tools…</p>
+          <ul id="cards" class="cards"></ul>
+          <noscript><p class="notice">The tool list needs JavaScript. You can also browse the <a href="https://github.com/LMC-CIS/Shared-Tools/tree/main/catalog">catalog folder on GitHub</a>.</p></noscript>
+        </section>
+      </div>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Resources here are open-source working projects shared by faculty and staff, with no guarantee that they work or will be maintained. Review before use. <a href="disclaimer.html">Read the disclaimer</a>.</p>
+      <p>Code under MIT, documentation under CC BY 4.0 (<a href="license.html">details</a>). This site uses no tracking or analytics. <a href="https://github.com/LMC-CIS/Shared-Tools">Source on GitHub</a>.</p>
+    </div>
+  </footer>
+</body>
+</html>

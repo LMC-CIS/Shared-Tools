@@ -1,0 +1,17 @@
+{
+  "$schema": "../../schema/tool.schema.json",
+  "name": "My Tool Name",
+  "summary": "One or two sentences that say what the tool does and who it helps.",
+  "type": "bookmarklet",
+  "audience": ["faculty"],
+  "runsOn": ["Canvas", "Chrome"],
+  "author": "Your Name",
+  "contact": "name@example.org",
+  "version": "0.1.0",
+  "status": "experimental",
+  "lastTested": "2026-01-31",
+  "files": ["bookmarklet.js"],
+  "dataHandling": "Runs only in your browser on the current page and does not store or send any data.",
+  "license": "MIT",
+  "ferpaConfirmed": true
+}

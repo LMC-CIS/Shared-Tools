@@ -1,0 +1,19 @@
+{
+  "$schema": "../../schema/tool.schema.json",
+  "name": "Faculty Schedule Viewer",
+  "summary": "TODO placeholder: a bookmarklet that will show a faculty member's teaching schedule in a cleaner, printable view inside Coursedog.",
+  "type": "bookmarklet",
+  "audience": ["staff"],
+  "runsOn": ["Coursedog", "Chrome", "Edge", "Firefox"],
+  "author": "TODO: author name",
+  "contact": "todo@example.org",
+  "version": "0.0.0",
+  "status": "experimental",
+  "lastTested": null,
+  "files": ["bookmarklet.js"],
+  "dataHandling": "TODO: describe what the bookmarklet reads from the page; it should run only in your browser and send nothing elsewhere.",
+  "license": "MIT",
+  "ferpaConfirmed": true,
+  "tags": ["scheduling", "placeholder"],
+  "todo": true
+}

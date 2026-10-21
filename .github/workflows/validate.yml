@@ -1,0 +1,26 @@
+# Runs on every pull request. Checks each catalog/<slug>/tool.json and makes
+# sure the site still builds. If this fails, open the "Details" link on the
+# pull request: the summary lists exactly what to fix, in plain language.
+name: Validate catalog
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Check tool.json files
+        run: npm run validate
+      - name: Test that the site builds
+        run: npm run build

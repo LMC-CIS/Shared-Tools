@@ -1,0 +1,19 @@
+{
+  "$schema": "../../schema/tool.schema.json",
+  "name": "Re-Engagement Email Drafter",
+  "summary": "TODO placeholder: a step-by-step workflow for drafting supportive check-in emails to students who have fallen behind in a Canvas course.",
+  "type": "workflow",
+  "audience": ["faculty"],
+  "runsOn": ["Canvas", "Email"],
+  "author": "TODO: author name",
+  "contact": "todo@example.org",
+  "version": "0.0.0",
+  "status": "experimental",
+  "lastTested": null,
+  "files": ["workflow.md"],
+  "dataHandling": "TODO: describe what student information the workflow uses and confirm none of it is pasted into tools not approved by your institution.",
+  "license": "CC-BY-4.0",
+  "ferpaConfirmed": true,
+  "tags": ["communication", "retention", "placeholder"],
+  "todo": true
+}

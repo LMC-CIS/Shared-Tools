@@ -1,0 +1,19 @@
+{
+  "$schema": "../../schema/tool.schema.json",
+  "name": "At-Risk Early Warning Dashboard",
+  "summary": "TODO placeholder: a dashboard that will help faculty spot students who may need outreach, based on Canvas activity in their own courses.",
+  "type": "app",
+  "audience": ["faculty"],
+  "runsOn": ["Canvas", "Web browser"],
+  "author": "TODO: author name",
+  "contact": "todo@example.org",
+  "version": "0.0.0",
+  "status": "experimental",
+  "lastTested": null,
+  "source": "https://github.com/LMC-CIS/TODO-at-risk-early-warning-dashboard",
+  "dataHandling": "TODO: describe exactly which Canvas data the app reads, where it is processed, and confirm nothing is stored or sent off the user's device.",
+  "license": "MIT",
+  "ferpaConfirmed": true,
+  "tags": ["retention", "early alert", "placeholder"],
+  "todo": true
+}
